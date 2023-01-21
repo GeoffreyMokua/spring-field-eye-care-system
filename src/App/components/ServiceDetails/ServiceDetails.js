@@ -7,7 +7,7 @@ function ServiceDetails() {
    const {serviceName} = useParams();
     const [service, setService] = useState([]);
     useEffect(()=>{
-        fetch('/data.JSON')
+        fetch('http://localhost:3000/services')
         .then(res=> res.json())
         .then(data => setService(data))
     },[])
@@ -24,7 +24,7 @@ function ServiceDetails() {
             <h4 className="text-danger">Surgent: {Sugent} </h4>
             <h4 className="text-danger">Payment: {cost} </h4>
             <p className="w-50">{descrption} </p>
-             <Link to="/booking"><Button variant="info my-2" > Book Appointment</Button></Link>
+             <Link to="/appointment"><Button variant="info my-2" > Book Appointment</Button></Link>
         </div>
   )
 }

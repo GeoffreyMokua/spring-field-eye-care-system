@@ -4,9 +4,9 @@ import { Row } from 'react-bootstrap';
 import './Services.css'
 
 function Services() {
-   const [services, setServices] = useState([]);
+    const [services, setServices] = useState([]);
     useEffect(()=>{
-        fetch('/data.json')
+        fetch('http://localhost:3000/services')
         .then(res=> res.json())
         .then(data => setServices(data))
     }, [])
