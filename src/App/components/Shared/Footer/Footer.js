@@ -14,11 +14,11 @@ function Footer() {
             </div> 
             <div className="col-lg-3 col-xs-12 my-4 ">
                 <p>If you feel dusty on your eyes</p>
-                <Link to="/booking"><Button variant="success">Book Appointment</Button></Link>
+                <Link to="/appointment"><Button variant="success">Book Appointment</Button></Link>
             </div>
             <div className="col-lg-3 col-xs-12 my-2">
                 <h3>Quick Visit</h3>
-                <p><Link className="url"  to="/home">Home   </Link></p>
+                <p><Link className="url"  to="/">Home   </Link></p>
                 <p><Link className="url"  to="/about">About </Link></p>
                 
 
@@ -30,7 +30,7 @@ function Footer() {
             </div>
         </div>
         <div>
-            <footer>© Copyright 2022 by Spring Field Eye Care</footer>
+            <footer>© Copyright 2023 by Spring Field Eye Care</footer>
         </div>
         </div>
   )
