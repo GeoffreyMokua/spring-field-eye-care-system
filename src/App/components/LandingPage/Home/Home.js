@@ -11,6 +11,7 @@ function Home() {
             <Services></Services>
             <Booking></Booking> 
             <Benefits></Benefits>
+            
     </div>
   )
 }

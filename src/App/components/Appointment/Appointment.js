@@ -6,7 +6,7 @@ function Appointment() {
   const navigate = useNavigate ();
 
      const success = () =>{
-         navigate.push('/booking/success')
+         navigate.push('/appointment/success')
      }
   return (
      <div className="form">
