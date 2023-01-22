@@ -26,7 +26,13 @@ function App() {
         <Route path="/doctor" element={<Doctor />} />
         <Route path="/doctors" element={<Doctors />} />
         <Route path="/register" element={<Register />} />
+
         <Route path="/service" element={<Service />} />
+
+        <Route path="service">
+              <Route index element={<Services />} />
+              <Route path=":name" element={<ServiceDetails />} />
+            </Route>
         
         <Route path="/service_details" element={<ServiceDetails />} />
         <Route path="/services" element={<Services />} />

@@ -12,7 +12,7 @@ function ServiceDetails() {
         .then(data => setService(data))
     }, [])
   
-console.log(service)
+
 
     const found = service.find(sr => sr.name === serviceName ); 
     if(found){
