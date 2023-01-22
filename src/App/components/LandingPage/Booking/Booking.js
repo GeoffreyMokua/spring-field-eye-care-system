@@ -9,7 +9,7 @@ function Booking() {
                 <p className="title">Are you looking for an eye-care Consultation?</p>
             </div> 
             <div className="col-lg-5 col-12">
-                <Link to="/booking">
+                <Link to="/appointment">
                   <button className="button-app">Book Appointment today <i class="fas fa-arrow-alt-circle-right"></i></button>
                 </Link>
             </div>

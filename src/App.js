@@ -7,6 +7,7 @@ import Doctors from "./App/components/Doctors/Doctors";
 import Home from "./App/components/LandingPage/Home/Home";
 import Login from "./App/components/Login/Login";
 import Register from "./App/components/Register/Register";
+import Service from "./App/components/Service/Service";
 import ServiceDetails from "./App/components/ServiceDetails/ServiceDetails";
 import Services from "./App/components/Services/Services";
 import Footer from "./App/components/Shared/Footer/Footer";
@@ -25,8 +26,14 @@ function App() {
         <Route path="/doctor" element={<Doctor />} />
         <Route path="/doctors" element={<Doctors />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/service" element={<Service />} />
+        
         <Route path="/service_details" element={<ServiceDetails />} />
         <Route path="/services" element={<Services />} />
+        <Route path="services">
+              <Route index element={<Services />} />
+              <Route path=":name" element={<ServiceDetails />} />
+            </Route>
       </Routes>
       <Footer />
     </>

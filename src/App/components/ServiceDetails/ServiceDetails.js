@@ -10,7 +10,9 @@ function ServiceDetails() {
         fetch('http://localhost:3000/services')
         .then(res=> res.json())
         .then(data => setService(data))
-    },[])
+    }, [])
+  
+console.log(service)
 
     const found = service.find(sr => sr.name === serviceName ); 
     if(found){
