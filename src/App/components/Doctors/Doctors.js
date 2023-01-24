@@ -4,18 +4,27 @@ import Doctor from '../Doctor/Doctor';
 
 function Doctors() {
   const [doctors, setDoctors] = useState([]);
+  const token = localStorage.getItem("patientToken");
+  const config = {
+    headers: {
+      "content-type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  };
+  // const doctor_id = localStorage.getItem("doctor");
     useEffect(()=>{
-        fetch(' http://localhost:3000/doctors')
+        fetch("http://127.0.0.1:8080/doctors", config)
         .then(res=> res.json())
         .then(data => setDoctors(data))
     }, [])
+  console.log(doctors);
   
   return (
     <div className="m-4" style={{width:'90%'}}>
             <h2 className=" my-3 text-success fw-bold fs-1">Lets Get Introduce With Our Doctors </h2>
             <Row xs={1} md={2} >
                 {
-                    doctors.map(doctor => <Doctor doctor={doctor}></Doctor>)
+                  doctors ? doctors.map(doctor =><Doctor doctor={doctor}/>): "loading"
                 }
             </Row>
         </div>

@@ -8,7 +8,8 @@ function Service(props) {
   return (
      <Col>
       <Card clasName="card">
-        <Card.Img  variant="top image" src={img} />
+        <Card.Img variant="top image" src={img} />
+        
         <Card.Body>
           <Card.Title ><h4>{name}</h4></Card.Title>
           <Link to={`/services/${name}`}><Button variant="success">View Details</Button></Link>

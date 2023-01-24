@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {  useNavigate } from 'react-router-dom';
 
 
 
@@ -37,6 +38,7 @@ function Copyright(props) {
 const theme = createTheme();
 
 function Login() {
+  const navigate = useNavigate()
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -45,6 +47,9 @@ function Login() {
       password: data.get('password'),
     });
   };
+  function handleLogin() {
+    navigate("/appointment")
+  }
   
   return (
     <ThemeProvider theme={theme}>
@@ -88,14 +93,15 @@ function Login() {
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
-            />
-            <Button
+            /> 
+            <Button 
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              onClick ={handleLogin}
             >
-                Sign In
+                Sign In 
             </Button>
             <Grid container>
               <Grid item xs>

@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import About from './App/components/About/About';
 import Appointment from "./App/components/Appointment/Appointment";
+// import Successfull from "./App/components/Appointment/Successfull";
 import Doctor from "./App/components/Doctor/Doctor";
 import Doctors from "./App/components/Doctors/Doctors";
 import Home from "./App/components/LandingPage/Home/Home";

@@ -5,12 +5,20 @@ import './Services.css'
 
 function Services() {
     const [services, setServices] = useState([]);
+    const token = localStorage.getItem("patientToken");
+    const config = {
+    headers: {
+      "content-type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  };
     useEffect(()=>{
-        fetch('http://localhost:3000/services')
+        fetch('http://127.0.0.1:8080/services', config)
         .then(res=> res.json())
         .then(data => setServices(data))
     }, [])
-  console.log(services);
+    console.log(services);
+    console.log(token)
   return (
      <div className="mt-4 mx-5">
             <h2 className="fs-1 text-success fw-bold">Our Eye Cares</h2>

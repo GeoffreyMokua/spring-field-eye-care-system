@@ -2,12 +2,15 @@ import React from 'react'
 import { Card, Col } from 'react-bootstrap';
 
 function Doctor({doctor}) {
-  const {img, name, age, experience, specialist} = doctor;
+  const { img, name, age, experience, specialist } = doctor;
+  console.log(img,  typeof(img))
   return (
    <div >
            <Col>
-      <Card className="mx-5">
-        <Card.Img variant="top" src={img} />
+        <Card className="mx-5">
+          
+          <Card.Img variant="top image" src={img} />
+    
         <Card.Body>
           <Card.Title className="fw-bold">{name}</Card.Title>
           <Card.Text>
