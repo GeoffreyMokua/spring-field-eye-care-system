@@ -7,10 +7,8 @@ function Doctor({doctor}) {
   return (
    <div >
            <Col>
-        <Card className="mx-5">
-          
-          <Card.Img variant="top image" src={img} />
-    
+        <Card className="mx-5">   
+          <Card.Img variant="top img" src={img} />
         <Card.Body>
             <Card.Title className="fw-bold">Name: {firstName}</Card.Title>
           <Card.Text>
