@@ -12,7 +12,6 @@ function Doctor({doctor}) {
         <Card.Body>
             <Card.Title className="fw-bold">Name: {firstName}</Card.Title>
           <Card.Text>
-              <h5 className="fw-bold">Age: {age} Years </h5>
               <h5 className="fw-bold">Practice Experience: {experience} Years</h5>
               <h5 className="fw-bold">Phd Holder with specialist on {specialist} </h5>
 
