@@ -37,7 +37,7 @@ function Register({ handleClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(firstName, lastName, email, password, phoneNumber, dateOfBirth);
-    fetch("http://127.0.0.1:8080/patients", {
+    fetch("/patients", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

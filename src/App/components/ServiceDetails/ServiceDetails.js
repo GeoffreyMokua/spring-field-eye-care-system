@@ -7,7 +7,7 @@ function ServiceDetails() {
    const {name} = useParams();
     const [service, setService] = useState([]);
     useEffect(()=>{
-        fetch(`http://localhost:8080/services/${name}`)
+        fetch(`/services/${name}`)
         .then(res=> res.json())
         .then(data => setService(data))
     }, [])

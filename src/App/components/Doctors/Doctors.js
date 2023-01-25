@@ -13,7 +13,7 @@ function Doctors() {
   };
   // const doctor_id = localStorage.getItem("doctor");
     useEffect(()=>{
-        fetch("http://127.0.0.1:8080/doctors", config)
+        fetch("/doctors", config)
         .then(res=> res.json())
         .then(data => setDoctors(data))
     }, [])

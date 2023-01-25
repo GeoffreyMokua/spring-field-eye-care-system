@@ -13,7 +13,7 @@ function Services() {
     },
   };
     useEffect(()=>{
-        fetch('http://127.0.0.1:8080/services', config)
+        fetch('/services', config)
         .then(res=> res.json())
         .then(data => setServices(data))
     }, [])
