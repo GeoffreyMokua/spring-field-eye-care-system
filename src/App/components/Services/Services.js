@@ -24,7 +24,9 @@ function Services() {
             <h2 className="fs-1 text-success fw-bold">Our Eye Cares</h2>
             <Row className="cards" xs={1} md={3}>
                {
-                   services.map(service => <Service key={service.id} service={service}></Service>)
+          // services.map(service => <Service key={service.id} service={service}></Service>)
+        services ? services.map(service =><Service service={service}/>) : "loading"
+          //  doctors ? doctors.map(doctor =><Doctor doctor={doctor}/>): "loading"
                }
            </Row>
         </div>

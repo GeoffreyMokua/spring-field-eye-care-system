@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Service.css'
 
 function Service(props) {
-    const {img, name} = props.service;
+    const {img: img,  name: name} = props.service;
   return (
      <Col>
       <Card clasName="card">

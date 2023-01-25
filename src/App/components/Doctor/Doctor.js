@@ -2,8 +2,8 @@ import React from 'react'
 import { Card, Col } from 'react-bootstrap';
 
 function Doctor({doctor}) {
-  const { img, name, age, experience, specialist } = doctor;
-  console.log(img,  typeof(img))
+  const { img: img,  first_name: firstName, last_name: lastName, age: age, experience: experience, specialist: specialist } = doctor;
+ 
   return (
    <div >
            <Col>
@@ -12,7 +12,7 @@ function Doctor({doctor}) {
           <Card.Img variant="top image" src={img} />
     
         <Card.Body>
-          <Card.Title className="fw-bold">{name}</Card.Title>
+            <Card.Title className="fw-bold">Name: {firstName}</Card.Title>
           <Card.Text>
               <h5 className="fw-bold">Age: {age} Years </h5>
               <h5 className="fw-bold">Practice Experience: {experience} Years</h5>
