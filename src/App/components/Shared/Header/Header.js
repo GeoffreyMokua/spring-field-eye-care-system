@@ -8,7 +8,7 @@ function Header() {
     <>
        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
-  <Navbar.Brand as={Link} to="/" className="head-icon">Spring Field  Eye Care</Navbar.Brand>
+  <Navbar.Brand as={Link} to="/" className="head-icon">SPRINGFIELD MEDICAL AND VISION CENTRE</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
