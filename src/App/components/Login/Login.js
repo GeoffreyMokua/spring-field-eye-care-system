@@ -1,6 +1,7 @@
 import React from 'react'
 import { Grid, Avatar, TextField, Button, Typography,Link } from '@material-ui/core'
 import CssBaseline from '@mui/material/CssBaseline';
+import LogoutIcon from '@material-ui/icons/ExitToApp';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Box from '@mui/material/Box';
@@ -110,6 +111,9 @@ function Login() {
                 </Link>
               </Grid>
             </Grid>
+            <Button href="/" startIcon={<LogoutIcon />} color="secondary" variant="contained">
+             Logout
+         </Button>
           </Box>
         </Box>
         <Copyright sx={{ mt: 8, mb: 4 }} />
