@@ -44,7 +44,7 @@ function Appointment() {
                    <label  className="mx-2 text-white fw-bold" htmlFor="time">Pick Time</label>
                    <input required type="time" name="" id="" /> <br /> <br />
                </div> 
-                <input style={{marginLeft:'6%',backgroundColor: 'yellow', border:'1px solid yellow',borderRadius:'5px'}} type="submit" value="Book Now" />
+                <input style={{marginLeft:'6%',backgroundColor: 'green', border:'1px solid red',borderRadius:'5px'}} type="submit" value="Book Now" />
            </form>
         </div>
   )

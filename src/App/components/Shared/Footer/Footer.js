@@ -8,7 +8,7 @@ function Footer() {
     <div className="footer-all w-100 p-3">
             <div className="footer row ">
             <div className="col-lg-3 col-xs-12 my-2">
-                <h2 style={{fontFamily: 'cursive'}}>Spring Field Eye Care</h2>
+                <h2 style={{fontFamily: 'cursive'}}>SpringField Medical Centre</h2>
                 <p>A 2 year journey on eye care!</p>
                 
             </div> 
@@ -30,7 +30,7 @@ function Footer() {
             </div>
         </div>
         <div>
-            <footer>© Copyright 2023 by Spring Field Eye Care</footer>
+            <footer>© Copyright 2023 by SFMC</footer>
         </div>
         </div>
   )
