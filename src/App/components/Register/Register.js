@@ -117,7 +117,7 @@ function Register({ handleClose }) {
       />
 
       <div>
-        <Button variant="contained" onClick={handleClose}>
+        <Button href="/" variant="contained" onClick={handleClose}>
           Cancel
         </Button>
         <Button type="submit" variant="contained" color="primary">
