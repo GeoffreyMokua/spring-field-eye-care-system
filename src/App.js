@@ -13,6 +13,7 @@ import ServiceDetails from "./App/components/ServiceDetails/ServiceDetails";
 import Services from "./App/components/Services/Services";
 import Footer from "./App/components/Shared/Footer/Footer";
 import Header from "./App/components/Shared/Header/Header";
+import DoctorLogin from "./App/components/DoctorLogin/DoctorLogin";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
         <Route path="/appointment" element={<Appointment />} />
+        <Route path="/doctor_login" element={<DoctorLogin />} />
         <Route path="/doctor" element={<Doctor />} />
         <Route path="/doctors" element={<Doctors />} />
         <Route path="/register" element={<Register />} />
