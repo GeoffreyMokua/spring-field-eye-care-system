@@ -14,7 +14,7 @@ function Banner() {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h5>Welcome To Spring Field Eye Care</h5> 
+      <h5>Welcome To Spring Field Medical and Vision Centre</h5> 
       
     </Carousel.Caption>
   </Carousel.Item>
