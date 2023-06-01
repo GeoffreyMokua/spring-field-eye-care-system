@@ -9,7 +9,7 @@ function Footer() {
             <div className="footer row ">
             <div className="col-lg-3 col-xs-12 my-2">
                 <h2 style={{fontFamily: 'cursive'}}>SpringField Medical Centre</h2>
-                <p>A 2 year journey on eye care!</p>
+                <p>A 2 year journey on medical care!</p>
                 
             </div> 
             <div className="col-lg-3 col-xs-12 my-4 ">
@@ -25,8 +25,8 @@ function Footer() {
             </div> 
             <div className="col-lg-3 col-xs-12 my-2">
                 <h3>Contact Us</h3>
-                <p>admin@springfield.com</p>
-                <p>+254721243247</p>
+                <p>info@whitespring.co.ke</p>
+                <p>+254721243247 / +254114247906</p>
             </div>
         </div>
         <div>
