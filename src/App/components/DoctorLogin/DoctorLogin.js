@@ -6,7 +6,7 @@ function DoctorLogin() {
   const navigate = useNavigate();
   const [show, setShow] = useState(true);
   const [notify, setNotify] = useState(false);
-  const [errors,setErrors] = useState([]);
+  // const [errors,setErrors] = useState([]);
   function handleNotification() {
     setNotify(true);
     setTimeout(() => {
@@ -103,7 +103,7 @@ function DoctorLogin() {
         <div className="sm:flex flex-col sm:justify-center sm:items-center w-full h-full">
           <img
             className="hidden sm:block rounded-md mb-3"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXm5eADVr5mE5_x6F2kwPgtFyGmvZ0-lRAHA&usqp=CAU"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXm5eADVr5mE5_x6F2kwPgtFyGmvZ0-lRAHA&usqp=CAU" alt="image1"
           />
           <button
             onClick={() => navigate("/")}

@@ -68,16 +68,16 @@ We provide specialized medical and vision care, honest clinical opinion and late
                                     <div class="social">
                                         <ul>
                                             <li class="twitter">
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                                <a href="icon"><i class="fab fa-twitter"></i></a>
                                             </li>
                                             <li class="pinterest">
-                                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                                <a href="icon"><i class="fab fa-pinterest"></i></a>
                                             </li>
                                             <li class="instagram">
-                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                                <a href="icon"><i class="fab fa-instagram"></i></a>
                                             </li>
                                             <li class="vimeo">
-                                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                                <a href="icon"><i class="fab fa-vimeo-v"></i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -85,7 +85,7 @@ We provide specialized medical and vision care, honest clinical opinion and late
                             </div>
                             <div class="info">
                                 <span class="message">
-                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                    <a href="icon"><i class="fas fa-envelope-open"></i></a>
                                 </span>
                                 <h4>Dr. Dan Mochere</h4>
                                 <span>LEAD DIRECTOR</span>
@@ -104,16 +104,16 @@ We provide specialized medical and vision care, honest clinical opinion and late
                                     <div class="social">
                                         <ul>
                                             <li class="twitter">
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                                <a href="icon"><i class="fab fa-twitter"></i></a>
                                             </li>
                                             <li class="pinterest">
-                                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                                <a href="icon"><i class="fab fa-pinterest"></i></a>
                                             </li>
                                             <li class="instagram">
-                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                                <a href="icon"><i class="fab fa-instagram"></i></a>
                                             </li>
                                             <li class="vimeo">
-                                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                                <a href="icon"><i class="fab fa-vimeo-v"></i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -121,7 +121,7 @@ We provide specialized medical and vision care, honest clinical opinion and late
                             </div>
                             <div class="info">
                                 <span class="message">
-                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                    <a href="icon"><i class="fas fa-envelope-open"></i></a>
                                 </span>
                                 <h4>Lorem Ipsum</h4>
                                 <span>App Developer</span>
@@ -140,16 +140,16 @@ We provide specialized medical and vision care, honest clinical opinion and late
                                     <div class="social">
                                         <ul>
                                             <li class="twitter">
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                                <a href="icon"><i class="fab fa-twitter"></i></a>
                                             </li>
                                             <li class="pinterest">
-                                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                                <a href="icon"><i class="fab fa-pinterest"></i></a>
                                             </li>
                                             <li class="instagram">
-                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                                <a href="icon"><i class="fab fa-instagram"></i></a>
                                             </li>
                                             <li class="vimeo">
-                                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                                <a href="icon"><i class="fab fa-vimeo-v"></i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -157,7 +157,7 @@ We provide specialized medical and vision care, honest clinical opinion and late
                             </div>
                             <div class="info">
                                 <span class="message">
-                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
+                                    <a href="icon"><i class="fas fa-envelope-open"></i></a>
                                 </span>
                                 <h4>Lorem Ipsum</h4>
                                 <span>Web designer</span>
