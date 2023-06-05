@@ -10,9 +10,21 @@ function About() {
             </div> 
             <div className="col-lg-6 my-5">
                 <h2>Who We are ?</h2>
-                <p>  Spring Field is the leader in eye care delivery system being at the forefront of vision care technology revolution having state of the art specialized ophthalmic care, Kenya approved technologies, diagnostics, treatment and surgery with one-stop mall for eye care products.
+                <p>  Springfield medical and Vision Centre is a healthcare facility established to give
+excellent medical and health care services within Kisii region and Surrounding.
+With the existing gaps within the healthcare service delivery our facility is
+committed to come up with innovative ways of sealing the gaps.
+We offer a full range of services to meet the healthcare needs to all. This includes
+the following: Medical consultation, general examination and treatment, medical
+laboratory tests, ANC clinic, Family planning, minor surgery, Child clinic,
+reproductive health and obstetrics and gynecology consultation. We also have
+specialized service: EYE CARE SERVICES ranging from comprehensive eye
+examination, contact lens consultations’ as well as medical eye care such as
+glaucoma and diabetic eye screening, cataract evaluation and surgery among
+other acute eye concerns. ENT SERVICES ranging from Ear Syringing and wax
+removal, FB removal, earring assessment, screening, and throat conditions
+management, pediatric ENT, Snoring and sleep apneas management.
 
-Spring Field is renowned for blending traditional hospitality with state-of-the-art ophthalmic care. Offering specialized treatment, we are the first choice of local and international patients and important celebrities alike. Spring Field has been swiftly moving towards its goal of achieving excellence by providing equitable and efficient eye care for everyone.
 
 </p>
             </div>
@@ -22,11 +34,11 @@ Spring Field is renowned for blending traditional hospitality with state-of-the-
                 <div className="col-lg-6 my-5">
                     <h2>Our History</h2>
                     <p> 
-Spring Field, the leading eye care provider in Kisii was established in 2020 under the guidance of the eminent ophthalmologist Dr. Dan Mochere, which focuses primarily on quality eye care by the highly skilled eye doctors equiped with cutting edge technology.
+Spring Field, the leading medical care provider in Kisii was established in 2020 under the guidance of the Dr. Dan Mochere, which focuses primarily on quality medical and eye care by the highly skilled doctors equiped with cutting edge technology.
 
-Our corporate social responsibility has fulfilled the hopes of better vision and eye care to many economically under- privileged patients. Our Free School Sight Testing Program has saved thousands of school children from developing lazy eye.
+Our corporate social responsibility has fulfilled the hopes of better medical and vision care to many economically under- privileged patients. Our Free School Medical screening Program has saved thousands of school children from developing medical complications.
 
-We provide specialized eye care, honest clinical opinion and latest technology to all who enter our portals. With these principles always in our mind, we hope to continue serving our patients with eye ailments to the best of our ability and live up to the reputation of being a leading provider of quality eye care.</p>
+We provide specialized medical and vision care, honest clinical opinion and latest technology to all who enter our portals. With these principles always in our mind, we hope to continue serving our patients with medical ailments to the best of our ability and live up to the reputation of being a leading provider of quality medical and vision care.</p>
                 </div>
                 <div className="col-lg-6 my-5">
                      <img className='rounded-3 img-fluid' src="https://image.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg" alt="" />
