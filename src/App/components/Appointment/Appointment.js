@@ -1,53 +1,143 @@
-import React from 'react'
-import { useNavigate  } from 'react-router';
-import './Appointment.css'
+import React, { useState } from "react";
+import {
+  TextField,
+  Button,
+  Container,
+  Box,
+  Grid,
+  Typography,
+  FormControl,
+  InputLabel,
+  Select,
+  MenuItem,
+} from "@mui/material";
+import { AccountCircle } from "@mui/icons-material";
 
-function Appointment() {
-  const navigate = useNavigate ();
+const Appointment = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    department: "",
+    appointmentDate: "",
+    comments: "",
+  });
 
-     const success = () =>{
-         navigate.push('/appointment/success')
-     }
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here, e.g. send data to an API
+    console.log(formData);
+  };
+
   return (
-    <div className="form">
-    <h2 className="text-success fw-bold fs-1 py-3">Book Your Appointment Now</h2>
-    <form className="my-5 " onSubmit={success}>
-        
-        <div className="mb-3">
-             <label className="mx-2 text-white fw-bold" htmlFor="name">Name</label>
-             <input className="mx-2 w-25" type="text" name="name" placeholder="First Name" required />
-             <input className="mx-2 w-25" type="text" name="name" id="name "placeholder="Last Name" required />
-             
-        </div>  
-        
-        <div className="mb-3">
-            <label className="mx-2 text-white fw-bold" htmlFor="email">Email</label>
-            <input required className="w-25" type="email" name="" id="" placeholder="email" />
-        </div>
-        <div className="mb-3">
-            <label htmlFor="age" className="mx-2 text-white fw-bold">Age</label>
-            <input type="text" name="" id="" placeholder="age" />
-        </div>
-        
-        <div className="mb-3">
-        <label className="mx-2  text-white fw-bold" htmlFor="gender">Gender</label>
-        <input type="radio" id="male" name="gender" value="Male"/>
-        <label className="mx-2 text-white fw-bold" for="male ">Male</label>
-        <input  type="radio" id="female" name="gender" value="Female"/>
-        <label  className="fw-bold text-white" for="female">Female</label> 
-        </div>
-        <div className="mb-3">
-            <label className="mx-2 text-white fw-bold" htmlFor="date">Choose Date</label>
-            <input required type="date" name="" id="" />
-        </div> 
-        <div>
-            <label  className="mx-2 text-white fw-bold" htmlFor="time">Pick Time</label>
-            <input required type="time" name="" id="" /> <br /> <br />
-        </div> 
-         <input style={{marginLeft:'6%',backgroundColor: 'green', border:'1px solid red',borderRadius:'5px'}} type="submit" value="Book Now" />
-    </form>
- </div>
-  )
-}
+    <Container maxWidth="md">
+      <form onSubmit={handleSubmit}>
+        <Typography variant="h4" align="center" gutterBottom>
+          Book Appointment
+        </Typography>
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <TextField
+              fullWidth
+              label="Full Name"
+              name="fullName"
+              value={formData.fullName}
+              onChange={handleInputChange}
+              required
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              fullWidth
+              label="Email"
+              name="email"
+              type="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              required
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              fullWidth
+              label="Phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleInputChange}
+              required
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <FormControl fullWidth>
+              <InputLabel>Department</InputLabel>
+              <Select
+                name="department"
+                value={formData.department}
+                onChange={handleInputChange}
+                required
+              >
+                <MenuItem value="cardiology">Cardiology</MenuItem>
+                <MenuItem value="orthopedics">Orthopedics</MenuItem>
+                <MenuItem value="neurology">Neurology</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              fullWidth
+              label="Appointment Date"
+              name="appointmentDate"
+              type="date"
+              value={formData.appointmentDate}
+              onChange={handleInputChange}
+              required
+              InputLabelProps={{
+                shrink: true,
+              }}
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
+              fullWidth
+              label="Comments"
+              name="comments"
+              multiline
+              rows={4}
+              value={formData.comments}
+              onChange={handleInputChange}
+            />
+          </Grid>
+        </Grid>
+        <Box
+          sx={{
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Button
+            type="submit"
+            variant="contained"
+            color="primary"
+            startIcon={<AccountCircle />}
+          >
+            Book Appointment
+          </Button>
+        </Box>
+      </form>
+    </Container>
+  );
+};
 
-export default Appointment
+export default Appointment;
